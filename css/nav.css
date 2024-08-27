@@ -1,0 +1,44 @@
+#nav {
+    background-color: #c2edbe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 60px; /* Ajusta el alto de la barra */
+  }
+  
+  #nav .logo {
+    width: 100px; /* Ajusta el ancho del logo */
+    margin-right: 10px;
+  }
+  
+  #nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los ítems del menú a la derecha */
+  }
+  
+  #nav ul li {
+    margin-right: 20px;
+  }
+  
+  #nav ul li:hover {
+    background-color: #ccc;
+  }
+  #nav #btn-menu {
+    display: none;
+    }
+  
+  @media (max-width: 768px) {
+    #nav #btn-menu {
+      display: block;
+    }
+    #nav ul {
+      display: none;
+    }
+    #nav ul.mostrar {
+      display: block;
+    }
+  }
